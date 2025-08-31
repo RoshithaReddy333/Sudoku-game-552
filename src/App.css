@@ -1,0 +1,31 @@
+.sudoku-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sudoku-grid {
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  gap: 2px;
+  justify-content: center;
+}
+
+.sudoku-row {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.sudoku-cell {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid black;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.sudoku-cell.error {
+  background-color: #ffcccc;
+  border: 2px solid red;
+}
